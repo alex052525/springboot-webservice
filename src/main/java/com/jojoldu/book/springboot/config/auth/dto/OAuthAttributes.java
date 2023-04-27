@@ -20,10 +20,10 @@ public class OAuthAttributes {
                            String nameAttributeKey, String name,
                            String email, String picture){
         this.attributes = attributes;
-        this.nameAttributeKey = nameAttributeKey;
         this.name = name;
         this.email = email;
         this.picture = picture;
+        this.nameAttributeKey = nameAttributeKey;
     }
     public static OAuthAttributes of(String registrationId,
                                      String userNameAttributeName,

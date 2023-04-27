@@ -34,12 +34,18 @@ dependencies {
 
     implementation('org.springframework.session:spring-session-jdbc')
     implementation('org.springframework.boot:spring-boot-starter-oauth2-client')
+    implementation 'org.projectlombok:lombok:1.18.22'
     testImplementation 'junit:junit:4.12'
 //    testImplementation 'junit:junit:4.13'
     implementation('org.springframework.boot:spring-boot-starter-mustache')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
     testImplementation("org.springframework.security:spring-security-test")
 }
+
 test {
     useJUnitPlatform()
+}
+compileJava {
+    options.fork = true
+    options.forkOptions.executable = '/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/bin/javac'
 }
