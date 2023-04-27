@@ -46,6 +46,7 @@ test {
     useJUnitPlatform()
 }
 compileJava {
-    options.fork = true
-    options.forkOptions.executable = '/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/bin/javac'
+    options.compilerArgs += ["-source", "1.8", "-target", "1.8"]
+    classpath += files('/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/bin/javac')
+
 }
