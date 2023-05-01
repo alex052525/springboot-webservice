@@ -45,7 +45,7 @@ dependencies {
 test {
     useJUnitPlatform()
 }
-compileJava {
-    options.compilerArgs += ["-source", "1.8", "-target", "1.8"]
-    classpath += files('/Users/jeongmokim/Library/Java/JavaVirtualMachines/corretto-18.0.2/Contents/Home/bin/javac')
-}
+//compileJava {
+//    options.compilerArgs += ["-source", "1.8", "-target", "1.8"]
+//    classpath += files('/Users/jeongmokim/Library/Java/JavaVirtualMachines/corretto-18.0.2/Contents/Home/bin/javac')
+//}
