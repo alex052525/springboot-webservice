@@ -26,6 +26,7 @@ repositories {
 }
 
 dependencies {
+    compile files('/Users/jeongmokim/Library/Java/JavaVirtualMachines/corretto-1.8.0_372/Contents/Home/lib/tools.jar')
 
     implementation('org.springframework.boot:spring-boot-starter-web')
     implementation('org.projectlombok:lombok')
