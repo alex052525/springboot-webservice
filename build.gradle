@@ -26,7 +26,7 @@ repositories {
 }
 
 dependencies {
-    compile files('/Users/jeongmokim/Library/Java/JavaVirtualMachines/corretto-1.8.0_372/Contents/Home/lib/tools.jar')
+//    compile files('/Users/jeongmokim/Library/Java/JavaVirtualMachines/corretto-1.8.0_372/Contents/Home/lib/tools.jar')
 
     implementation('org.springframework.boot:spring-boot-starter-web')
     implementation('org.projectlombok:lombok')
@@ -36,7 +36,9 @@ dependencies {
     implementation('org.springframework.session:spring-session-jdbc')
     implementation('org.springframework.boot:spring-boot-starter-oauth2-client')
     implementation 'org.projectlombok:lombok:1.18.22'
-    testImplementation 'junit:junit:4.12'
+//    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+//    testImplementation('org.junit.platform:junit-platform-launcher:1.9.2')
 //    testImplementation 'junit:junit:4.13'
     implementation('org.springframework.boot:spring-boot-starter-mustache')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
