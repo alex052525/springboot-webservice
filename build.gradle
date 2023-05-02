@@ -26,7 +26,6 @@ repositories {
 }
 
 dependencies {
-    compile files('/Users/jeongmokim/Library/Java/JavaVirtualMachines/corretto-1.8.0_372/Contents/Home/lib/tools.jar')
 
     implementation('org.springframework.boot:spring-boot-starter-web')
     implementation('org.projectlombok:lombok')
@@ -43,6 +42,8 @@ dependencies {
     implementation('org.springframework.boot:spring-boot-starter-mustache')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
     testImplementation("org.springframework.security:spring-security-test")
+
+    compile("org.mariadb.jdbc:mariadb-java-client")
 }
 
 test {
